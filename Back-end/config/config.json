@@ -1,0 +1,13 @@
+﻿{
+    "port": 3000,
+    "security": {
+        "tokenLife" : 3600000
+    },
+    "mongoose": {
+    	"uri": "mongodb://localhost/liteit"
+    },
+    "session": {
+        "secret": "my_little_secret",
+        "maxAge": 36000
+    }
+}

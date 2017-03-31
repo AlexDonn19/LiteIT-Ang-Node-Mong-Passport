@@ -1,0 +1,22 @@
+﻿[
+    {
+        "_id": 1,
+        "username": "John Deer",
+        "password": "John"
+    },
+    {
+        "_id": 2,
+        "username": "Mike Oldy",
+        "password": "Mike"
+    },
+    {
+        "_id": 3,
+        "username": "Lucie Molt",
+        "password": "Lucie"
+    },
+    {
+        "_id": 4,
+        "username": "Molly Lint",
+        "password": "Molly"
+    }
+]

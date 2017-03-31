@@ -1,0 +1,61 @@
+﻿<div class="modal-header">
+  <h3 class="modal-title">Create new review</h3>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+  <table class="table row">
+    <thead>
+        <tr>
+            <td class="col-md-3">Image</td>
+            <td class="col-md-9">
+              <div class="prod-img-place col-md-2">
+                <img class="prod-img" ng-src="{{addDialogCtrl.product.image}}" alt="{{addDialogCtrl.product.title}}">
+              </div>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Product</td>
+            <td>
+              <div class="col-md-9">
+                {{addDialogCtrl.product.title}}
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Type your review</td>
+            <td>
+              <div class="col-md-12">
+                <input type="text" ng-model="addDialogCtrl.newdata.text" class="col-md-12">
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Select rate</td>
+            <td>
+              <div class="col-md-2">
+                <select class="form-control"
+                        data-style="btn-primary"
+                        data-width="auto"
+                        ng-model="addDialogCtrl.newdata.rate"
+                        ng-options="item for item in addDialogCtrl.rateRange">
+                </select>
+              </div>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-success" ng-click="addDialogCtrl.ok()" title="Save" ng-disabled="addDialogCtrl.invalid">Save</button>
+  <button class="btn btn-default" ng-click="addDialogCtrl.cancel()" title="Cancel">Cancel</button>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+﻿<section id="list-container"
+         class="panel-primary list-container">
+
+    <div class="col-md-2"> <!--Sidebar content-->
+      <p>
+        Search:
+        <input ng-model="listCtrl.query" />
+      </p>
+
+    </div>
+    <div class="col-md-9 col-md-offset-1 list-block">  <!-- row -->
+        <h1>Products</h1>
+        <ul class="my-list">
+            <li class="card"
+                 ng-repeat="product in listCtrl.getProducts() | filter:listCtrl.query">
+                <div class="row">
+                    <div class="prod-img-place col-md-2">
+                        <img class="prod-img" ng-src="{{product.image}}" alt="{{product.title}}">
+                    </div>
+                    <div class="prod-text col-md-9">  <!-- col-md-offset-1 -->
+                        <h2 class="pr-medium">{{product.title}}</h2>
+                        <p>{{product.text}}</p>
+                        <p><a class="btn btn-default" href="/product/{{product._id}}" role="button">View details &raquo;</a></p>
+                    </div>
+
+                    <div class="prod-review">
+                         <span>review: {{listCtrl.getReviewNum(product._id)}}</span>
+                         <span>rate: {{listCtrl.getAvgRate(product._id)}}</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</section>

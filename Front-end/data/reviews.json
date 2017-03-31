@@ -1,0 +1,37 @@
+﻿[
+    {
+        "_id": 1,
+        "rate": 5,
+        "text": "This is the best book I ever seen",
+        "id_user": 1,
+        "id_entry": 1
+    },
+    {
+        "_id": 2,
+        "rate": 5,
+        "text": "This is good and usefull pen",
+        "id_user": 2,
+        "id_entry": 2
+    },
+    {
+        "_id": 3,
+        "rate": 5,
+        "text": "This is modern well maden table",
+        "id_user": 1,
+        "id_entry": 3
+    },
+    {
+        "_id": 4,
+        "rate": 5,
+        "text": "This is realy convenient chair",
+        "id_user": 2,
+        "id_entry": 4
+    },
+    {
+        "_id": 5,
+        "rate": 4,
+        "text": "The book is good",
+        "id_user": 3,
+        "id_entry": 1
+    }
+]

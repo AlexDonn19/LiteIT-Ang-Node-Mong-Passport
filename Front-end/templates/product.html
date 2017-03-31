@@ -1,0 +1,26 @@
+﻿<section>
+    <h1>Information about {{productCtrl.product.title}}</h1>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6">
+            <img class="prod-img-big" ng-src="{{productCtrl.product.image}}">
+            <h3>{{productCtrl.product.title}}</h3>
+            <p>{{productCtrl.product.text}}</p>
+        </div>
+        <div class="review-block col-xs-6 col-sm-6">
+            <div class="loading-img"
+                 ng-if="productCtrl.isloading">
+                <i><img src="./img/gears.gif" alt="loading"></i>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="review in productCtrl.reviews">
+                    <p><b>Rating: </b>{{review.rate}}</p>
+                    <p><b>Review: </b>{{review.text}}</p>
+                </li>
+            </ul>
+            <button ng-if="productCtrl.isLogged" class="btn btn-info btn-lg"
+            ng-click="productCtrl.createReview(productCtrl.product)">Add new review</button>
+        </div>
+    </div>
+
+
+</section>

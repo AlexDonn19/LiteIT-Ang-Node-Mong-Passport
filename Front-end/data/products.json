@@ -1,0 +1,26 @@
+﻿[
+    {
+        "_id": 1,
+        "title": "Book",
+        "image": "./img/products/book.jpg",
+        "text": "The best Angularjs books for you to learn and become expert at AngualrJS programming"
+    },
+    {
+        "_id": 2,
+        "title": "Pen",
+        "image": "./img/products/pen.jpg",
+        "text": "Ballpoint pen with twist mechanism. Barrel and cap made of black precious resin inlaid with Montblanc emblem. Gold-plated clip and rings."
+    },
+    {
+        "_id": 3,
+        "title": "Table",
+        "image": "./img/products/table.jpg",
+        "text": "Modern table with a unique and unmistakable design for the kitchen, the living room and public spaces."
+    },
+    {
+        "_id": 4,
+        "title": "Chair",
+        "image": "./img/products/chair.jpg",
+        "text": "The convenient office chair from CorLiving featuring a black fabric seat, contoured white mesh back support, gas lift and black legs with rolling wheels."
+    }
+]
