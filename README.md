@@ -4,7 +4,7 @@ Used:
 1. AngularJS (Front-end)
 2. NodeJS (server-side)
 3. MongoDB (database)
-4. Passport (token authorize user)
+4. Passport (OAuth2 token authorize user)
 
 RESTful app:
 - watch the list of products
